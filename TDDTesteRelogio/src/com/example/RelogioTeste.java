@@ -1,12 +1,18 @@
 package com.example;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class RelogioTeste {
-	public void testCriacaoRelogio() {
+
+    @Test
+    public void testProgramarHoras() {
         Relogio relogio = new Relogio();
-        assertNotNull(relogio);
+        relogio.programarHoras(10);
+        assertEquals(10, relogio.getHoras());
     }
 
+   
+   
 }
+
