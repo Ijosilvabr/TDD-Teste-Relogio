@@ -12,7 +12,15 @@ public class RelogioTeste {
         assertEquals(10, relogio.getHoras());
     }
 
-   
+    @Test
+    public void testReiniciarMeiaNoite() {
+        Relogio relogio = new Relogio();
+        relogio.reiniciarMeiaNoite();
+        assertEquals(0, relogio.getHoras());
+        assertEquals(0, relogio.getMinutos());
+        assertEquals(0, relogio.getSegundos());
+    }
+
    
 }
 
